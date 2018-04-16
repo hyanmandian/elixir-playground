@@ -11,4 +11,11 @@ defmodule ArraysDsTest do
       1 4 3 2
     """)
   end
+
+  test "reverse" do
+    assert ["2", "3", "4", "1"] == ArraysDs.reverse("""
+      4
+      1 4 3 2
+    """)
+  end
 end
