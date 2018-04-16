@@ -1,12 +1,12 @@
-Code.load_file("readme.exs")
+Code.load_file("#{__ENV__.file |> Path.dirname}/readme.exs")
 
-ExUnit.start()
+ExUnit.start
 
 defmodule ArraysDsTest do
   use ExUnit.Case, async: true
 
   test "parse" do
-    IO.puts ArraysDs.parse("""
+    assert ["4", ["1", "4", "3", "2"]] == ArraysDs.parse("""
       4
       1 4 3 2
     """)
