@@ -6,7 +6,7 @@ defmodule ArraysDs do
     [head, String.split(tail)]
   end
 
-  def reverse(input) do
+  def solve(input) do
     [head, tail] = parse(input)
 
     Enum.reverse(tail)

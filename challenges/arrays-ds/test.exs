@@ -12,8 +12,8 @@ defmodule ArraysDsTest do
     """)
   end
 
-  test "reverse" do
-    assert ["2", "3", "4", "1"] == ArraysDs.reverse("""
+  test "solve" do
+    assert ["2", "3", "4", "1"] == ArraysDs.solve("""
       4
       1 4 3 2
     """)
