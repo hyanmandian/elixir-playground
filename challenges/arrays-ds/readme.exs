@@ -9,6 +9,6 @@ defmodule ArraysDs do
   def solve(input) do
     [head, tail] = parse(input)
 
-    Enum.reverse(tail)
+    Enum.reduce(tail, [], fn(value, acc) -> [value | acc] end)
   end
 end
